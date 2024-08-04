@@ -10,6 +10,9 @@ document.getElementById('display').addEventListener("keyup",function(e){
     if(e.keyCode === 187){
         addition();
     }
+    if(e.keyCode === 27){
+        allclear();
+    }
     if(e.keyCode === 189){
         subraction();
     }
@@ -21,9 +24,6 @@ document.getElementById('display').addEventListener("keyup",function(e){
     }
     if(e.keyCode === 13){
         result();
-    }
-    if(e.keyCode === 27){
-        allclear();
     }
 })
 function allclear(){

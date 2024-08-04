@@ -4,23 +4,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/f8ff6b26db.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
         <div class="box">
             <div class="input" id="input">
-                <input type="number" class="display poppins-bold" id="display">
+                <input type="text" class="display poppins-bold" id="display">
             </div>
             <div class="buttons">
-                <input type="button" class="otherkeys poppins-bold operators" value="AC" onclick="allclear()">
+                <input type="button" class="otherkeys poppins-bold operators" value="AC" onclick="display.value = allclear() ">
                 <input type="button" class="otherkeys poppins-bold operators" value="del" onclick="display.value = display.value.toString().slice(0,-1)">
                 <input type="button" class="otherkeys poppins-bold inputs" value="." onclick="display.value += '.'">
                 <input type="button" class="operator poppins-bold inputs" value="+" onclick="display.value += '+';addition()">
                 <input type="button" class="poppins-bold inputs" value="1" onclick="display.value += '1' "> 
                 <input type="button" class="poppins-bold inputs" value="2" onclick="display.value += '2' ">
                 <input type="button" class="poppins-bold inputs" value="3" onclick="display.value += '3' ">
-                <input type="button" class="operator poppins-bold inputs" value="-" onclick="display.value += '-';subraction() ">
+                <input type="button" class="operator poppins-bold inputs" value="-" onclick="display.value += '-';subraction()">
                 <input type="button" class="poppins-bold inputs" value="4" onclick="display.value += '4' ">
                 <input type="button" class="poppins-bold inputs" value="5" onclick="display.value += '5' ">
                 <input type="button" class="poppins-bold inputs" value="6" onclick="display.value += '6' ">
@@ -32,11 +31,6 @@
                 <input type="button" class="poppins-bold inputs" value="0" onclick="display.value += '0' ">
                 <input type="button" class="poppins-bold inputs" value="00" onclick="display.value += '00' ">
                 <input type="button" class="equal operator poppins-bold inputs" value="=" onclick="result()">
-            </div>
-            <div class="help">
-                <div class="hello"><i class="fa-solid fa-circle-question"></i></div>
-                <div>click esc button to allclear</div>
-                <div>click backspace button to erase single digit</div>
             </div>
         </div>
     </div>
