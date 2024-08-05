@@ -12,7 +12,7 @@
                 <input type="text" class="display poppins-bold" id="display">
             </div>
             <div class="buttons">
-                <input type="button" class="otherkeys poppins-bold operators" value="AC" onclick="display.value = allclear() ">
+                <input type="button" class="otherkeys poppins-bold operators" value="AC" onclick="display.value = '' ">
                 <input type="button" class="otherkeys poppins-bold operators" value="del" onclick="display.value = display.value.toString().slice(0,-1)">
                 <input type="button" class="otherkeys poppins-bold inputs" value="." onclick="display.value += '.'">
                 <input type="button" class="operator poppins-bold inputs" value="+" onclick="display.value += '+';addition()">
